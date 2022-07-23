@@ -30,7 +30,7 @@ for($i=0;$i<count($contents[0]);$i++) {
 /// alınan verileri ekranda gösteriyoruz. 
 echo '<ul style="list-style:none;">';
 foreach( $posts as $post) {
-	echo ' <li> <img src="'.str_replace('./',$url,$post["thumbnail"]).'" alt="" /> <a href="post_detay.php?url='.$post["post_url"].'">'.$post["title"]."</a></li>";
+	echo ' <li> <img src="'.str_replace('./',$url,$post["thumbnail"]).'" alt="" /> <p>.$post["content"].</p> <a href="#">'.$post["title"]."</a></li>";
 }
 echo '</ul>';
 ?>
